@@ -1,0 +1,21 @@
+{
+  "name": "magic-deck",
+  "version": "1.0.0",
+  "description": "A website for a magic trick.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc && npm run build:cp-public",
+    "build:cp-public": "xcopy \"public\\*.*\" \"dist\" /y",
+    "type": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoUmpierrez/MagicDeck.git"
+  },
+  "author": "Marco Umpiérrez",
+  "license": "MIT",
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.3.3"
+  }
+}
